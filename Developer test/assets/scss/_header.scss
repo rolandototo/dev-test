@@ -1,0 +1,81 @@
+$background-color_1: #fff;
+header {
+	.main-navigation {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		position: relative;
+		text-align: center;
+		.menu-header-menu-container {
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+			justify-content: center;
+			margin: 20px 0;
+			text-align: center;
+			align-items: center;
+			cursor: pointer;
+
+			.menu {
+				display: none;
+				background-color: $background-color_1;
+				width: 100%;
+				li {
+					border-bottom: 1px solid #ccc;
+					a {
+						display: block;
+						padding: 10px;
+					}
+					ul {
+						display: none;
+					}
+					&:hover {
+						ul {
+							display: block;
+						}
+					}
+				}
+			}
+			.hamburger {
+				width: 30px;
+				position: relative;
+				margin: 10px 0;
+				content: "";
+				display: block;
+				height: 2px;
+				background: #000;
+				transition: all 0.3s;
+				&:before {
+					content: "";
+					display: block;
+					background: #000;
+					height: 2px;
+					transition: all 0.3s;
+					width: 100%;
+					position: absolute;
+					top: -8px;
+				}
+				&:after {
+					content: "";
+					display: block;
+					background: #000;
+					height: 2px;
+					transition: all 0.3s;
+					width: 100%;
+					position: absolute;
+					bottom: -8px;
+				}
+			}
+		}
+	}
+}
+.logo {
+	padding: 35px;
+	.custom-logo-link {
+		.custom-logo {
+			width: 100%;
+			height: auto;
+		}
+	}
+}

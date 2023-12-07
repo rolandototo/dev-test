@@ -1,0 +1,37 @@
+a{
+
+    &.btn{
+        text-decoration: none;
+    text-transform: uppercase;
+    border: 3px solid;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: white;
+        &.btn-blank{
+            text-decoration: none;
+            text-transform: uppercase;
+            border: 3px solid;
+            border-radius: 30px;
+            padding: 10px 30px;
+            font-weight: bold;
+            margin: 10px 0;
+            color: white;
+        }
+        &.red-btn{
+            border-color: #902;
+            background: #902;
+
+        }
+        &.font-color-r{
+            color: #902;
+        }
+        &.inner-w-post{
+            width: 108px;
+        }
+    }
+    &.r{
+        color: #902
+    }
+}

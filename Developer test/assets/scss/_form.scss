@@ -1,0 +1,37 @@
+
+$background-color_1: red;
+
+.form-section {
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url(http://dev-test-backup.local/wp-content/uploads/2023/12/Minimalist-Living-Room.png);
+
+	h4 {
+		text-align: center;
+	}
+	p {
+		text-align: center;
+	}
+	input {
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 10px;
+		box-sizing: border-box;
+	}
+	textarea {
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 10px;
+		box-sizing: border-box;
+	}
+	button {
+		width: 100%;
+		padding: 10px;
+		border: none;
+		cursor: pointer;
+	}
+}
+

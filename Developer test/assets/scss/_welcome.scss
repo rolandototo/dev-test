@@ -1,0 +1,14 @@
+.welcome-section{
+    display: flex;
+  flex-direction: column;
+
+    margin: 20px 30px;
+    text-align: center;
+    h2{
+        color: #777;
+        padding: 30px 0;
+    }
+    a{
+        margin: 20px 0;
+    }
+}

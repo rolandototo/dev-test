@@ -1,0 +1,48 @@
+.hero-baner{
+    background: url(http://dev-test-backup.local/wp-content/uploads/2023/12/Hero-Banner.jpg);
+    position: relative;
+    position: relative;
+    background-size: cover;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .swiper{
+        bottom: 0;
+        background-color: #00000082;
+        color: white;
+        .swiper-slide{
+            width: 434px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            .slide-text{
+                margin: 20px 0;
+                p{
+                    padding: 10px 0;
+                    text-transform: uppercase;
+                }
+                .bold-text-slide{
+                    font-weight: bolder;
+                }
+            }
+            .slide-btn{
+                margin: 20px 0;
+                display: flex;
+                flex-direction: column;
+
+            }
+        }
+        .swiper-button-prev{
+            display: none;
+        }
+        .swiper-button-next{
+            display: none;
+        }
+    }
+}

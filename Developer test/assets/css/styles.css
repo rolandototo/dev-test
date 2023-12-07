@@ -1,0 +1,628 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+audio, canvas, video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden], template {
+  display: none;
+}
+html {
+  background: #fff;
+  color: #000;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+html, button, input, select, textarea {
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+}
+a {
+  background: transparent;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover, a:active {
+  outline: 0;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b, strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+q {
+  quotes: "“" "”" "‘" "’";
+}
+q:before, q:after {
+  content: "";
+  content: none;
+}
+small {
+  font-size: 80%;
+}
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 0;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+}
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
+button, input {
+  line-height: normal;
+}
+button, select {
+  text-transform: none;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled], input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+header .main-navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  text-align: center;
+}
+header .main-navigation .menu-header-menu-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: 20px 0;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+header .main-navigation .menu-header-menu-container .menu {
+  display: none;
+  background-color: #fff;
+  width: 100%;
+}
+header .main-navigation .menu-header-menu-container .menu li {
+  border-bottom: 1px solid #ccc;
+}
+header .main-navigation .menu-header-menu-container .menu li a {
+  display: block;
+  padding: 10px;
+}
+header .main-navigation .menu-header-menu-container .menu li ul {
+  display: none;
+}
+header .main-navigation .menu-header-menu-container .menu li:hover ul {
+  display: block;
+}
+header .main-navigation .menu-header-menu-container .hamburger {
+  width: 30px;
+  position: relative;
+  margin: 10px 0;
+  content: "";
+  display: block;
+  height: 2px;
+  background: #000;
+  transition: all 0.3s;
+}
+header .main-navigation .menu-header-menu-container .hamburger:before {
+  content: "";
+  display: block;
+  background: #000;
+  height: 2px;
+  transition: all 0.3s;
+  width: 100%;
+  position: absolute;
+  top: -8px;
+}
+header .main-navigation .menu-header-menu-container .hamburger:after {
+  content: "";
+  display: block;
+  background: #000;
+  height: 2px;
+  transition: all 0.3s;
+  width: 100%;
+  position: absolute;
+  bottom: -8px;
+}
+.logo {
+  padding: 35px;
+}
+.logo .custom-logo-link .custom-logo {
+  width: 100%;
+  height: auto;
+}
+.hero-baner {
+  background: url(http://dev-test-backup.local/wp-content/uploads/2023/12/Hero-Banner.jpg);
+  position: relative;
+  position: relative;
+  background-size: cover;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: end;
+}
+.hero-baner img {
+  width: 100%;
+  height: auto;
+}
+.hero-baner .swiper {
+  bottom: 0;
+  background-color: #00000082;
+  color: white;
+}
+.hero-baner .swiper .swiper-slide {
+  width: 434px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.hero-baner .swiper .swiper-slide .slide-text {
+  margin: 20px 0;
+}
+.hero-baner .swiper .swiper-slide .slide-text p {
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+.hero-baner .swiper .swiper-slide .slide-text .bold-text-slide {
+  font-weight: bolder;
+}
+.hero-baner .swiper .swiper-slide .slide-btn {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+.hero-baner .swiper .swiper-button-prev {
+  display: none;
+}
+.hero-baner .swiper .swiper-button-next {
+  display: none;
+}
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 30px;
+  text-align: center;
+}
+.welcome-section h2 {
+  color: #777;
+  padding: 30px 0;
+}
+.welcome-section a {
+  margin: 20px 0;
+}
+a.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 3px solid;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: white;
+}
+a.btn.btn-blank {
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 3px solid;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: white;
+}
+a.btn.red-btn {
+  border-color: #902;
+  background: #902;
+}
+a.btn.font-color-r {
+  color: #902;
+}
+a.btn.inner-w-post {
+  width: 108px;
+}
+a.r {
+  color: #902;
+}
+.section-inner-main {
+  margin: 40px 0;
+  background-color: #F9F9F9;
+}
+.section-inner-main img {
+  width: 100%;
+  height: auto;
+}
+.section-inner-main .inner-section-text {
+  margin: 20px 30px;
+}
+.section-inner-main .inner-section-text p {
+  margin-bottom: 30px;
+}
+.section-inner-main .inner-btn-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inner-testimonial {
+  margin: 20px 0;
+}
+.testimonial-name {
+  margin: 20px 0;
+}
+.form-section {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url(http://dev-test-backup.local/wp-content/uploads/2023/12/Minimalist-Living-Room.png);
+}
+.form-section h4 {
+  text-align: center;
+}
+.form-section p {
+  text-align: center;
+}
+.form-section input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+.form-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+.form-section button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+footer .footer-content .footer-menu .footer-menu-wrap {
+  text-align: center;
+  text-decoration: none;
+  margin: 30px 0;
+}
+footer .footer-content .footer-menu .footer-menu-wrap li {
+  margin: 10px 0;
+}
+footer .footer-content .footer-menu .footer-menu-wrap a {
+  text-decoration: none;
+  color: black;
+}
+.social {
+  margin: 30px 0;
+}
+.social ul {
+  display: flex;
+  justify-content: space-around;
+}
+.social ul li {
+  text-decoration: none;
+  list-style: none;
+}
+@media only screen and (min-width: 768px) {
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .site-header .logo {
+    width: 300px;
+    height: 105px;
+  }
+  .site-header .main-navigation {
+    justify-content: space-evenly;
+    align-items: end;
+  }
+  .site-header .main-navigation .menu-header-menu-container .hamburger {
+    display: none;
+  }
+  .site-header .main-navigation .menu-header-menu-container .menu {
+    display: flex;
+  }
+  .site-header .main-navigation .menu-header-menu-container .menu li {
+    list-style: none;
+    border: none;
+  }
+  .site-header .main-navigation .menu-header-menu-container .menu li a {
+    text-decoration: none;
+    color: black;
+  }
+  .hero-baner {
+    width: 1920px;
+    height: 800px;
+    background-size: cover;
+  }
+  .hero-baner .swiper-wrapper .swiper-slide {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .hero-baner .swiper-wrapper .swiper-slide .slide-text {
+    text-align: start;
+    font-size: 30px;
+  }
+  .hero-baner .swiper-wrapper .swiper-slide .slide-text .bold-text-slide {
+    font-size: 40px;
+  }
+  .hero-baner .swiper-wrapper .swiper-slide .slide-btn {
+    flex-direction: row;
+  }
+  .hero-baner .swiper-wrapper .swiper-slide .slide-btn a {
+    margin: auto 15px;
+  }
+  .hero-baner .swiper .swiper-button-prev {
+    display: block;
+  }
+  .hero-baner .swiper .swiper-button-next {
+    display: block;
+  }
+  .welcome-section {
+    display: block;
+    margin: auto;
+    margin-bottom: 60px;
+  }
+  .welcome-section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+  .welcome-section div p {
+    width: 800px;
+    font-size: 20px;
+  }
+  .section-inner-main {
+    display: flex;
+    margin: 0;
+  }
+  .section-inner-main img {
+    flex: 60%;
+  }
+  .section-inner-main .inner-section-text {
+    flex: 40%;
+  }
+  .section-inner-main .inner-section-text h4 {
+    font-size: 40px;
+  }
+  .section-inner-main .inner-section-text p {
+    font-size: 20px;
+  }
+  .section-inner-main .inner-section-text a {
+    width: 170px;
+    height: 50px;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-inner-main .inner-section-text div {
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+  }
+  .section-inner-main.build-on-your-lot-section {
+    flex-direction: row-reverse;
+  }
+  .blog-section {
+    height: 949px;
+    position: relative;
+  }
+  .blog-section img {
+    max-width: 1010px;
+    height: 550px;
+    left: 0;
+    top: 110px;
+    position: absolute;
+  }
+  .blog-section .last-post {
+    margin: 0;
+    width: 1010px;
+    height: 667px;
+    position: absolute;
+    background-color: white;
+    right: 0;
+    bottom: 0;
+    bottom: 110px;
+  }
+  .blog-section .last-post div .inner-btn-post {
+    flex-direction: row;
+    justify-content: start;
+  }
+  .testimonials-section {
+    width: 1920px;
+    height: 333px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .testimonials-section p {
+    font-size: 20px;
+    width: 800px;
+    height: 60px;
+    text-align: center;
+  }
+  .testimonials-section div {
+    display: flex;
+    width: 100%;
+  }
+  .testimonials-section div div {
+    flex: 50%;
+  }
+  .testimonials-section div div p {
+    font-size: 16px;
+  }
+  .form-section {
+    width: 1920px;
+    height: 889px;
+    position: relative;
+  }
+  .form-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Color negro con 50% de transparencia */
+  }
+  .form-section p {
+    color: white;
+  }
+  .form-section h4 {
+    color: white;
+  }
+  .form-section .innner-section-form {
+    width: 1300px;
+    height: 686px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .form-section .innner-section-form div {
+    display: flex;
+    margin: 20px 0;
+  }
+  .form-section .innner-section-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-section .innner-section-form form button {
+    width: 170px;
+    height: 50px;
+    align-self: center;
+  }
+  footer nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  footer nav ul li {
+    list-style: none;
+    padding: 0 20px;
+  }
+}
